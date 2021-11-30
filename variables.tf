@@ -51,3 +51,18 @@ variable "instance_type" {
   type        = string
   default     = "t2.micro"
 }
+
+
+variable "db_username" {
+  description = "Database administrator username"
+  type        = string
+  # Marks the variables as sensitive (TF14+ only)
+  #sensitive   = true
+}
+
+variable "db_password" {
+  description = "Database administrator password"
+  type        = string
+  # Marks the variables as sensitive (TF14+ only)
+  #sensitive   = true
+}
